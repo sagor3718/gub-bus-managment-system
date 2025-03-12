@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUB Bus Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-color: #F9FAFB;
+            font-family: Arial, sans-serif;
+        }
+        .slider {
+            position: relative;
+            width: 90%;
+            height: 80vh;
+            overflow: hidden;
+            margin-left:5%;
+            margin-right: 5%;
+            margin-top: 24px;
+        
+            
+        }
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Start off-screen */
+            transition: left 1s ease-in-out;
+        }
+        .slider img.active {
+            left: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+
+<!-- Hero Slider Section -->
+<section class="slider">
+    <img src="./image/bg-1.jpg" alt="Bus Service 1" class="active" />
+    <img src="./image/gub-bg2.jpg" alt="Bus Service 2" />
+    <img src="./image/bg-3.jpg" alt="Bus Service 3" />
+    <img src="./image/bg-4.jpg" alt="Bus Service 4" />
+    
+    <div class="overlay">
+        <h1 class="text-5xl font-extrabold">Safe & Reliable Bus Service for GUB Students</h1>
+        <p class="mt-4 text-lg">Book your ride effortlessly and travel with ease.</p>
+        <a href="book-now.html" class="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">Book a Ride</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-10">
+    <div class="container mx-auto px-16 text-center">
+        <h2 class="text-4xl font-bold text-gray-800">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">🚌 Safe & Secure</h3>
+                <p class="text-gray-600 mt-2">Ensuring student safety is our top priority.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">⏳ On-Time Service</h3>
+                <p class="text-gray-600 mt-2">Never be late for your classes again.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">🌍 Wide Coverage</h3>
+                <p class="text-gray-600 mt-2">Covering all major routes across the city.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-8 bg-gray-100">
+    <div class="container mx-auto px-16 text-center">
+        <h2 class="text-4xl font-bold text-gray-800">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">1️⃣ Register</h3>
+                <p class="text-gray-600 mt-2">Sign up for an account in minutes.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">2️⃣ Book a Ride</h3>
+                <p class="text-gray-600 mt-2">Choose your route and book instantly.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold">3️⃣ Enjoy the Ride</h3>
+                <p class="text-gray-600 mt-2">Arrive at your destination hassle-free.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+</body>
+</html>

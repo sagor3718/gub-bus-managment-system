@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Notices - GUB Bus Management</title>
+  <script src="./script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar from script.js -->
+  <div id="navbar"></div>
+
+  <!-- Bus Notices Section -->
+  <div class="max-w-7xl mx-auto p-6 mt-10">
+    <h2 class="text-4xl font-extrabold text-center text-gray-700 tracking-wide mb-6">
+      Important Notices
+    </h2>
+    
+    <!-- Card with Shadow for Bus Notices -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-transform duration-300 hover:shadow-lg">
+      <ul class="space-y-6">
+        <!-- Bus Notice Item 1 -->
+        <li class="p-4 border-b border-gray-300">
+          <h3 class="text-xl font-semibold text-gray-800">Bus Schedule Update</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Due to maintenance work, the bus schedule for next week will be adjusted. Please refer to the updated bus schedule for details.
+          </p>
+          <a href="schedule.html" class="text-blue-500 hover:underline">View Schedule</a>
+        </li>
+
+        <!-- Bus Notice Item 2 -->
+        <li class="p-4 border-b border-gray-300">
+          <h3 class="text-xl font-semibold text-gray-800">Route Change Announcement</h3>
+          <p class="text-gray-700 leading-relaxed">
+            The bus route for the 8 AM morning service will be altered due to road closures. Make sure to check the updated route details.
+          </p>
+          <a href="schedule.html" class="text-blue-500 hover:underline">Check Route Changes</a>
+        </li>
+
+        <!-- Bus Notice Item 3 -->
+        <li class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Bus Maintenance Notification</h3>
+          <p class="text-gray-700 leading-relaxed">
+            The bus services will be temporarily halted for maintenance on March 10th. Buses will resume normal operations on March 12th.
+          </p>
+          <a href="schedule.html" class="text-blue-500 hover:underline">Learn More</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer from script.js -->
+  <div id="footer" class="mt-10"></div>
+
+</body>
+</html>
