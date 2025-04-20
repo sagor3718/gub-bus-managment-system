@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Contact Us - GUB Bus</title>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-4xl font-extrabold mb-10 text-center text-gray-700">📞 Contact Us</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Contact Form -->
+      <form class="bg-white p-8 rounded-2xl shadow-md border border-gray-200">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Contact Info & Map -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 space-y-4">
+        <h3 class="text-2xl font-bold text-gray-800">GUB Transport Office</h3>
+        <p class="text-gray-600">Green University of Bangladesh, Purbachal American City</p>
+        <p class="text-gray-600">Phone: <span class="font-semibold text-gray-800">+880-1234-567890</span></p>
+        <p class="text-gray-600">Email: <span class="font-semibold text-gray-800">transport@gub.edu.bd</span></p>
+        
+        <div class="mt-6">
+          <iframe class="w-full h-60 rounded-xl border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.8125272061434!2d90.4319916144437!3d23.829348191059522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c75e270c9f7d%3A0xf7c0181bb7b6013d!2sGreen%20University%20of%20Bangladesh%20(GUB)!5e0!3m2!1sen!2sbd!4v1615283766452!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report to Spokesperson Section -->
+    <div class="mt-16 bg-white p-8 rounded-2xl shadow-md border border-gray-200 max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold text-red-600 mb-6 text-center">🚨 Report to Spokesperson</h3>
+      <form id="reportForm">
+        <div class="mb-4">
+          <label for="reportName" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+          <input type="text" id="reportName" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="reportIssue" class="block text-gray-700 font-semibold mb-2">Issue Details</label>
+          <textarea id="reportIssue" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Describe the issue..." required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-all">
+          Submit Report
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer" class="mt-10"></div>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+
+  <!-- Simple Alert for Report Submit -->
+  <script>
+    document.getElementById("reportForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("reportName").value.trim();
+      const issue = document.getElementById("reportIssue").value.trim();
+
+      if (name && issue) {
+        alert("✅ Report submitted successfully!\nThank you, " + name + ".");
+        this.reset();
+      } else {
+        alert("⚠️ Please fill out all fields before submitting.");
+      }
+    });
+  </script>
+</body>
+</html>

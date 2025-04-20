@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spokesperson Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar Placeholder -->
+  <div id="navbar"></div>
+
+  <!-- Dashboard Title -->
+  <div class="max-w-7xl mx-auto p-6 mt-6">
+    <h1 class="text-4xl font-extrabold text-center text-gray-700 mb-10 tracking-wide">
+      🧑‍💼 Spokesperson Dashboard
+    </h1>
+
+    <!-- Dashboard Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Manage Buses -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+        <h2 class="text-2xl font-bold mb-3 text-gray-800">🚌 Manage Buses</h2>
+        <p class="text-gray-700">Add, edit, or remove routes and schedules with ease.</p>
+        <p class="mt-3 text-green-500 font-semibold">✅ Active</p>
+      </div>
+
+      <!-- View Student Requests -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+        <h2 class="text-2xl font-bold mb-3 text-gray-800">📨 Student Requests</h2>
+        <p class="text-gray-700">Review and respond to schedule-related student requests.</p>
+        <p class="mt-3 text-red-500 font-semibold">❌ 3 Pending</p>
+      </div>
+
+      <!-- Live Bus Status -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+        <h2 class="text-2xl font-bold mb-3 text-gray-800">🕒 Live Bus Status</h2>
+        <p class="text-gray-700">Monitor current bus status, delays, and updates.</p>
+        <p class="mt-3 text-green-500 font-semibold">✅ All Buses Reporting</p>
+      </div>
+
+      <!-- New: Bus Alerts & Announcements -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+        <h2 class="text-2xl font-bold mb-3 text-gray-800">🔔 Bus Alerts & Announcements</h2>
+        <p class="text-gray-700">Send important updates or notices to all students in real-time.</p>
+        <p class="mt-3 text-yellow-500 font-semibold">⚠️ 1 New Alert Sent</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Placeholder -->
+  <div id="footer" class="mt-10"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

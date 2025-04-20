@@ -41,8 +41,9 @@ document.getElementById('navbar').innerHTML = `
         <div class="space-x-4">
             <a href="index.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Home</a>
             <a href="schedule.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Schedule</a>
-            <a href="about-us.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">About Us</a>
+            <a href="contact-us.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Contact Us</a>
             <a href="notice.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Notice</a>
+            <a href="spokesperson-deshboard.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Spokesperson</a>
             <a href="login.html" class="px-4 py-2 rounded transition duration-300 hover:bg-green-600 hover:text-white">Login</a>
         </div>
     </div>
